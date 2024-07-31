@@ -167,6 +167,29 @@
 
   });
 
+
+  document.addEventListener('DOMContentLoaded', function() {
+    function calculateAge(birthday) {
+        var birthDate = new Date(birthday);
+        var today = new Date();
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
+
+    var birthdaySpan = document.getElementById('birthday');
+    var ageSpan = document.getElementById('age');
+    
+    if (birthdaySpan && ageSpan) {
+        var birthday = birthdaySpan.textContent;
+        var age = calculateAge(birthday);
+        ageSpan.textContent = age;
+    }
+});
+
   /**
    * Init swiper sliders
    */
