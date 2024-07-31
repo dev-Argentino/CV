@@ -81,7 +81,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #c91426;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -945,6 +945,7 @@ section,
   box-sizing: content-box;
   text-align: center;
   min-height: 320px;
+  justify-content: flex-end;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -995,6 +996,7 @@ section,
   margin-bottom: 35px;
   border-radius: 6px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
 }
 
 .testimonials .testimonial-item p::after {
@@ -1260,9 +1262,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 .logo-wrapper {
   width: 50px;  /* Adjust size as needed */
@@ -1317,6 +1316,26 @@ section,
   }
 }
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
+
+.chat-button-container {
+  margin-top: 30px;
+}
+
+.btn-chat-with-me {
+  background: #36f4a5;
+  border: 0;
+  padding: 14px 45px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-chat-with-me:hover {
+  background: #14ddd6;
+  color: #fff;
+}
